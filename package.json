@@ -1,7 +1,8 @@
 {
-  "name": "react-big-scheduler",
-  "version": "0.2.0",
-  "description": "A scheduler and resource planning component built for React and made for modern browsers (IE10+)",
+  "name": "my-react-big-scheduler",
+  "version": "0.0.1",
+  "description":
+    "A scheduler and resource planning component built for React and made for modern browsers (IE10+)",
   "keywords": [
     "scheduler",
     "react-component",
@@ -10,14 +11,11 @@
     "resource planning",
     "antd"
   ],
-  "files": [
-    "lib/",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["lib/", "LICENSE", "README.md"],
   "main": "lib/index",
   "homepage": "https://github.com/StephenChou1017/react-big-scheduler",
-  "author": "Stephen Chou <27788280@qq.com> (https://github.com/StephenChou1017)",
+  "author":
+    "Stephen Chou <27788280@qq.com> (https://github.com/StephenChou1017)",
   "repository": {
     "type": "git",
     "url": "git@github.com:StephenChou1017/react-big-scheduler.git"
@@ -29,16 +27,19 @@
   "config": {},
   "scripts": {
     "clean": "rimraf ./lib && mkdir lib",
-    "build": "npm run clean && babel src --out-dir lib && cpy src/css/style.css lib/css",
+    "build":
+      "npm run clean && babel src --out-dir lib && cpy src/css/style.css lib/css",
     "clean:exampledist": "rimraf ./exampledist/static",
-    "build:exampledist": "npm run clean:exampledist && cpy src/css/style.css exampledist/static && cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js",
-    "example": "webpack-dev-server --config ./webpack/webpack-dev.config.js --hot",
-    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
-    "build:dll": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.dll.config.js"
+    "build:exampledist":
+      "npm run clean:exampledist && cpy src/css/style.css exampledist/static && cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.js",
+    "example":
+      "webpack-dev-server --config ./webpack/webpack-dev.config.js --hot",
+    "analyz":
+      "cross-env NODE_ENV=production npm_config_report=true npm run build",
+    "build:dll":
+      "cross-env NODE_ENV=production webpack --config ./webpack/webpack.dll.config.js"
   },
-  "pre-commit": [
-    "lint"
-  ],
+  "pre-commit": ["lint"],
   "dependencies": {
     "antd": "^3.2.3",
     "moment": "^2.18.1",
